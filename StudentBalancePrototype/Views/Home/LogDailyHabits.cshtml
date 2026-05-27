@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Log Daily Habits";
+    ViewData["ActivePage"] = "Wellness";
+}
+
+<div class="screen-header">
+    <a asp-controller="Home" asp-action="Wellness" class="back-button">←</a>
+    <div>
+        <p class="screen-label">Wellness</p>
+        <h1>Log Daily Habits</h1>
+    </div>
+</div>
+
+<div class="habit-card">
+    <div class="habit-row">
+        <div class="habit-info">
+            <div class="habit-icon sleep-icon">🌙</div>
+            <div>
+                <h3>Sleep Hours</h3>
+                <p>Track your rest</p>
+            </div>
+        </div>
+
+        <div class="stepper">
+            <button>-</button>
+            <span>7h</span>
+            <button class="plus-button">+</button>
+        </div>
+    </div>
+
+    <div class="habit-row">
+        <div class="habit-info">
+            <div class="habit-icon exercise-icon">🏃</div>
+            <div>
+                <h3>Exercise Minutes</h3>
+                <p>Daily movement</p>
+            </div>
+        </div>
+
+        <div class="stepper">
+            <button>-</button>
+            <span>45m</span>
+            <button class="plus-button">+</button>
+        </div>
+    </div>
+
+    <div class="habit-row">
+        <div class="habit-info">
+            <div class="habit-icon water-icon">💧</div>
+            <div>
+                <h3>Water Intake</h3>
+                <p>Glasses today</p>
+            </div>
+        </div>
+
+        <div class="stepper">
+            <button>-</button>
+            <span>6</span>
+            <button class="plus-button">+</button>
+        </div>
+    </div>
+
+    <div class="mood-section">
+        <label>Mood</label>
+        <div class="input-box">
+            <span>😊</span>
+            <input type="text" value="Calm and focused" readonly />
+            <span class="dropdown-icon">⌄</span>
+        </div>
+    </div>
+</div>
+
+<button class="primary-button">Save Habit Log</button>
+
+<div class="helper-card wellness-tip">
+    <span>🌿</span>
+    <p>Small habits build balance. Logging your wellness helps you understand how your routine affects your studies.</p>
+</div>

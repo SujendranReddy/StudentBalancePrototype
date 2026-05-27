@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "+ New Assignment";
+    ViewData["ActivePage"] = "Academic";
+}
+
+<div class="screen-header">
+    <a asp-controller="Home" asp-action="Academic" class="back-button">←</a>
+    <div>
+        <p class="screen-label">Academic</p>
+        <h1>New Assignment</h1>
+    </div>
+</div>
+
+<div class="form-card">
+    <div class="input-group-custom">
+        <label>Assignment Title</label>
+        <div class="input-box">
+            <span>📝</span>
+            <input type="text" value="Interface Design Summative" readonly />
+        </div>
+    </div>
+
+    <div class="input-group-custom">
+        <label>Due Date</label>
+        <div class="input-box">
+            <span>📅</span>
+            <input type="text" value="25 May 2026" readonly />
+        </div>
+    </div>
+
+    <div class="input-group-custom">
+        <label>Priority</label>
+        <div class="input-box">
+            <span>⚠️</span>
+            <input type="text" value="High Priority" readonly />
+            <span class="dropdown-icon">⌄</span>
+        </div>
+    </div>
+
+    <div class="input-group-custom">
+        <label>Notes</label>
+        <div class="notes-box">
+            <textarea readonly>Complete high-fidelity prototype screens and final design explanation.</textarea>
+        </div>
+    </div>
+</div>
+
+
+<button class="primary-button">Save Assignment</button>
+
+<div class="helper-card">
+    <span>💡</span>
+    <p>Tip: Breaking assignments into smaller tasks can reduce stress and improve planning.</p>
+</div>

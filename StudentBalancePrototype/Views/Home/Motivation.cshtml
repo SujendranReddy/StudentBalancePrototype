@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Motivation";
+    ViewData["ActivePage"] = "Motivation";
+}
+
+<div class="screen-header no-back-header">
+    <div>
+        <p class="screen-label">Motivation Tools</p>
+        <h1>Stay Motivated</h1>
+    </div>
+</div>
+
+<div class="motivation-summary-card">
+    <div>
+        <p class="summary-label">Current level</p>
+        <h2>Level 3</h2>
+        <span>77% complete</span>
+    </div>
+
+    <div class="summary-icon">🏆</div>
+</div>
+
+<div class="section-title-row">
+    <h2>Motivation Features</h2>
+    <p>Choose a tool</p>
+</div>
+
+<div class="feature-list">
+    <a asp-controller="Home" asp-action="ProgressStreaks" class="feature-card">
+        <div class="feature-icon progress-feature">📈</div>
+        <div>
+            <h3>My Progress & Streaks</h3>
+            <p>View your level, study streak, habit streak, and weekly balance.</p>
+        </div>
+        <span class="feature-arrow">›</span>
+    </a>
+
+    <div class="feature-card disabled-feature">
+        <div class="feature-icon rewards-feature">🎖️</div>
+        <div>
+            <h3>Rewards</h3>
+            <p>Unlock badges when you complete study and wellness goals.</p>
+        </div>
+        <span class="coming-soon">Soon</span>
+    </div>
+
+    <div class="feature-card disabled-feature">
+        <div class="feature-icon insights-feature">📊</div>
+        <div>
+            <h3>Insights</h3>
+            <p>See how your habits and study routine affect your progress.</p>
+        </div>
+        <span class="coming-soon">Soon</span>
+    </div>
+</div>

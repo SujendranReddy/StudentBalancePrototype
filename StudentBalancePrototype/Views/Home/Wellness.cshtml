@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Wellness";
+    ViewData["ActivePage"] = "Wellness";
+}
+
+<div class="screen-header no-back-header">
+    <div>
+        <p class="screen-label">Wellness Tools</p>
+        <h1>Track Your Balance</h1>
+    </div>
+</div>
+
+<div class="wellness-summary-card">
+    <div>
+        <p class="summary-label">Today’s wellness</p>
+        <h2>Good Progress</h2>
+        <span>3 habits tracked</span>
+    </div>
+
+    <div class="summary-icon">🌿</div>
+</div>
+
+<div class="section-title-row">
+    <h2>Wellness Features</h2>
+    <p>Choose a tool</p>
+</div>
+
+<div class="feature-list">
+    <a asp-controller="Home" asp-action="LogDailyHabits" class="feature-card">
+        <div class="feature-icon habits-feature">🌙</div>
+        <div>
+            <h3>Log Daily Habits</h3>
+            <p>Track sleep, exercise, water intake, and mood.</p>
+        </div>
+        <span class="feature-arrow">›</span>
+    </a>
+
+    <div class="feature-card disabled-feature">
+        <div class="feature-icon mood-feature">😊</div>
+        <div>
+            <h3>Mood Journal</h3>
+            <p>Reflect on stress levels and daily emotions.</p>
+        </div>
+        <span class="coming-soon">Soon</span>
+    </div>
+
+    <div class="feature-card disabled-feature">
+        <div class="feature-icon breathing-feature">🧘</div>
+        <div>
+            <h3>Mindful Break</h3>
+            <p>Use short breaks to reset before studying again.</p>
+        </div>
+        <span class="coming-soon">Soon</span>
+    </div>
+</div>

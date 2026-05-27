@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Academic";
+    ViewData["ActivePage"] = "Academic";
+}
+
+<div class="screen-header no-back-header">
+    <div>
+        <p class="screen-label">Academic Tools</p>
+        <h1>Plan Your Studies</h1>
+    </div>
+</div>
+
+<div class="academic-summary-card">
+    <div>
+        <p class="summary-label">Next deadline</p>
+        <h2>INSY Summative</h2>
+        <span>Due in 2 days</span>
+    </div>
+
+    <div class="summary-icon">📚</div>
+</div>
+
+<div class="section-title-row">
+    <h2>Academic Features</h2>
+    <p>Choose a tool</p>
+</div>
+
+<div class="feature-list">
+    <a asp-controller="Home" asp-action="NewAssignment" class="feature-card">
+        <div class="feature-icon assignment-feature">📝</div>
+        <div>
+            <h3>New Assignment</h3>
+            <p>Add assignment details, due dates, priority, and notes.</p>
+        </div>
+        <span class="feature-arrow">›</span>
+    </a>
+
+    <a asp-controller="Home" asp-action="StudyTimer" class="feature-card">
+        <div class="feature-icon timer-feature">⏱️</div>
+        <div>
+            <h3>Study Session Timer</h3>
+            <p>Start a focused 45-minute study session and track progress.</p>
+        </div>
+        <span class="feature-arrow">›</span>
+    </a>
+
+    <div class="feature-card disabled-feature">
+        <div class="feature-icon calendar-feature">📅</div>
+        <div>
+            <h3>View Deadlines</h3>
+            <p>See upcoming academic deadlines in one place.</p>
+        </div>
+        <span class="coming-soon">Soon</span>
+    </div>
+</div>

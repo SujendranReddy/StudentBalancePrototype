@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "My Progress & Streaks";
+    ViewData["ActivePage"] = "Motivation";
+}
+
+<div class="screen-header">
+    <a asp-controller="Home" asp-action="Motivation" class="back-button">←</a>
+    <div>
+        <p class="screen-label">Motivation</p>
+        <h1>My Progress & Streaks</h1>
+    </div>
+</div>
+
+<div class="quick-actions">
+    <div class="quick-action-card">
+        <span>🏆</span>
+        <p>Rewards</p>
+    </div>
+
+    <div class="quick-action-card">
+        <span>📊</span>
+        <p>Insight</p>
+    </div>
+</div>
+
+<div class="progress-card">
+    <div class="progress-circle">
+        <div class="progress-inner">
+            <h2>77%</h2>
+            <p>Level 3</p>
+        </div>
+    </div>
+
+    <h3>Balanced Student</h3>
+    <p class="progress-message">You are building strong academic and wellness habits.</p>
+</div>
+
+<div class="streak-list">
+    <div class="streak-card">
+        <div>
+            <span class="streak-icon">📚</span>
+        </div>
+        <div>
+            <h3>Study Streak</h3>
+            <p>7 days completed</p>
+        </div>
+        <strong>+12%</strong>
+    </div>
+
+    <div class="streak-card">
+        <div>
+            <span class="streak-icon">🌿</span>
+        </div>
+        <div>
+            <h3>Habit Streak</h3>
+            <p>5 days completed</p>
+        </div>
+        <strong>+8%</strong>
+    </div>
+</div>
+
+<div class="balanced-week-card">
+    <span>✨</span>
+    <div>
+        <h3>Balanced Week</h3>
+        <p>You completed most of your study and wellness goals this week. Keep going!</p>
+    </div>
+</div>

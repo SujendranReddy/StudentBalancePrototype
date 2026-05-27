@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Study Session Timer";
+    ViewData["ActivePage"] = "Academic";
+}
+
+<div class="screen-header">
+    <a asp-controller="Home" asp-action="Academic" class="back-button">←</a>
+    <div>
+        <p class="screen-label">Academic</p>
+        <h1>Study Session Timer</h1>
+    </div>
+</div>
+
+<div class="session-alert">
+    <span>✅</span>
+    <p>Your 45-minute study session has been logged. Take a short break before your next session.</p>
+</div>
+
+<div class="timer-card">
+    <div class="timer-circle">
+        <div class="timer-inner">
+            <p>Focus Session</p>
+            <h2>00:45:00</h2>
+        </div>
+    </div>
+
+    <button class="primary-button timer-button">Start Session</button>
+
+    <p class="timer-note">
+        A focused study session helps you manage time and reduce last-minute stress.
+    </p>
+</div>
+
+<div class="timer-stats">
+    <div class="timer-stat-card">
+        <span>📚</span>
+        <h3>Today</h3>
+        <p>45 min</p>
+    </div>
+
+    <div class="timer-stat-card">
+        <span>🔥</span>
+        <h3>Streak</h3>
+        <p>7 days</p>
+    </div>
+</div>
